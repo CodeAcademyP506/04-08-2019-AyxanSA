@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    ;
+    text-decoration: none;
+}
+
+.contain {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+.contain .sekil {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, .25);
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+#header .headerBox {
+    display: flex;
+}
+
+#header .headerBox .esasUl ul {
+    display: flex;
+    list-style: none;
+    color: #754ef9;
+}
+
+#header .headerBox .esasUl ul li {
+    margin-left: 10px;
+    color: #754ef9;
+    position: relative;
+}
+
+#header .headerBox .esasUl ul li a {
+    color: #754ef9;
+    text-decoration: none;
+}
+
+#header .headerBox .esasUl ul li ::before {
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: #754ef9;
+    position: absolute;
+    top: -50%;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+#header .headerBox .esasUl ul li :hover::before {
+    opacity: 1;
+    top: -26px;
+}
+
+#main {
+    margin-top: 120px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+#main .words {
+    margin-left: 100px;
+    width: 50%;
+    margin-top: 160px;
+}
+
+#main .words h3 {
+    color: #754ef9;
+    font-size: 1.5em;
+}
+
+#main .words h1 {
+    margin-top: 30px;
+    font-size: 3em;
+}
+
+#main .words p {
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#main .words .view {
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    background-color: #754ef9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+#main .words .view a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#main .words .view:hover {
+    background-color: white;
+    border: 1px solid #754ef9;
+    text-decoration: none;
+}
+
+#main .words .view:hover a {
+    color: #754ef9;
+}
+
+#main .sekil1 {
+    width: 50%;
+}
+
+#main .sekil1 .sekil2 {
+    height: 500px;
+    width: 450px;
+    border: 20px solid #754ef9;
+}
+
+#main .icons {
+    margin-top: 150px;
+    display: flex;
+}
+
+#main .icons .xett {
+    height: 1.5px;
+    width: 150px;
+    margin-top: 15px;
+    background-color: #754ef9;
+    margin-left: -100px;
+}
+
+#main .icons .iconsocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    color: #764ef94b;
+    cursor: pointer;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #764ef981;
+    border-radius: 50%;
+}
+
+#main .icons .iconsocial:hover {
+    background-color: #754ef9;
+    color: white;
+}
+
+#main .icons .iconsocial:hover i {
+    color: white;
+}
+
+#main2 .basliq {
+    align-items: center;
+    justify-content: center;
+}
+
+#main2 .basliq h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#main2 .basliq p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main2 .text4 {
+    width: 50%;
+    margin-left: 100px;
+}
+
+#main2 .text4 h3 {
+    text-align: left;
+}
+
+#main2 .text4 p {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+#main2 .esas {
+    margin-top: 50px;
+    display: flex;
+}
+
+#main2 .esas .faiz {
+    width: 50%;
+}
+
+#main2 .esas .faiz .progress .progress-bar {
+    background-color: #754ef9;
+}
+
+#main3 .basliq1 h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main3 .basliq1 p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main3 .container {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#main3 .container .box {
+    border: 1px solid #764ef94d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    height: 250px;
+}
+
+#main3 .container .box:hover {
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, .25);
+}
+
+#main3 .container .box i {
+    margin: 15px;
+    margin-top: 10px;
+    color: #754ef9;
+    font-size: 3em;
+}
+
+#main3 .container .box h4 {
+    font: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#main3 .container .box h4:hover {
+    color: #754ef9;
+}
+
+#main3 .container .box p {
+    color: rgba(0, 0, 0, 0.548);
+    text-align: center;
+}
+
+#main4 {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background: url(call-to-action.jpg);
+}
+
+#main4 .layout {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(119, 0, 255, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main4 .layout .mainWords h2 {
+    font-size: 3em;
+    color: white;
+    font: bold;
+}
+
+#main4 .layout .mainWords {
+    text-align: center;
+    height: auto;
+}
+
+#main4 .layout .mainWords p {
+    font-size: 1.3em;
+    color: white;
+}
+
+#main4 .layout .mainWords a {
+    background-color: white;
+    color: #754ef9;
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+#main4 .layout .mainWords a:last-child {
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-right: 10px;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+#main4 .layout .mainWords a:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+#main4 .layout .mainWords a:first-child:hover {
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+#main4 .layout .mainWords .buttons {
+    margin-top: 30px;
+}
+
+#main5 .basliq2 {
+    margin-left: 3%;
+}
+
+#main5 .basliq2 h2 {
+    font-size: 3em;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#main5 .basliq2 p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main5 .pictures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main5 .pictures .pictures1 {
+    background-color: white;
+    position: relative;
+}
+
+#main5 .pictures .pictures1 .layoutPic {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 255, 0.397);
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    z-index: 4;
+    display: none;
+}
+
+#main5 .pictures .pictures1 img {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+#main5 .pictures .pictures1 h3 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: white;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+#main5 .pictures .pictures1 .fa-plus {
+    font-size: 2em;
+    top: 60%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#main5 .pictures .pictures1 .fa-link {
+    font-size: 2em;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#main5 .pictures .pictures1 .fa-plus:hover {
+    color: #754ef9;
+    background-color: white;
+}
+
+#main5 .pictures .pictures1 .fa-link:hover {
+    color: #754ef9;
+    background-color: white;
+}
+
+#main5 .pictures .pictures1:hover .fa-link {
+    left: 60%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#main5 .pictures .pictures1:hover .fa-plus {
+    left: 40%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#main5 .pictures .pictures1:hover .layoutPic {
+    display: block
+}
+
+#main5 .pictures .pictures1:hover h3 {
+    top: 40%;
+    visibility: visible;
+}
+
+#main5 .more {
+    position: relative;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #754ef9;
+    left: 40%;
+}
+
+#main5 .more a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    top: 30%;
+    left: 20%;
+}
+
+#main5 .more:hover {
+    background-color: white;
+    border: 1px solid #754ef9;
+}
+
+#main5 .more:hover a {
+    color: #754ef9;
+}
+
+#main6 {
+    margin-top: 200px;
+}
+
+#main6 .basliq3 h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main6 .basliq3 p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main6 .qutular {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+}
+
+#main6 .qutular .qutu {
+    width: 330px;
+    height: 650px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.342);
+}
+
+#main6 .qutular .qutu .basliq6 {
+    width: 100%;
+    height: 80px;
+    background-color: #754ef9;
+}
+
+#main6 .qutular .qutu .basliq6 h3 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#main6 .qutular .qutu .prices {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+#main6 .qutular .qutu .prices p {
+    text-align: center;
+    padding: 23px;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+#main6 .qutular .qutu .prices h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #754ef9;
+}
+
+#main6 .qutular .qutu .list {
+    margin-top: 20px;
+}
+
+#main6 .qutular .qutu .list p {
+    text-align: center;
+}
+
+#main6 .qutular .qutu .view {
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 170px;
+    height: 50px;
+    background-color: #754ef9;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+#main6 .qutular .qutu .view a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#main6 .qutular .qutu .view:hover {
+    background-color: white;
+    border: 1px solid #754ef9;
+    text-decoration: none;
+}
+
+#main6 .qutular .qutu .view:hover a {
+    color: #754ef9;
+}
+
+#main6 .qutular .qutu .view1 {
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #754ef9;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+#main6 .qutular .qutu .view1 a {
+    margin: 10px;
+    color: #754ef9;
+    text-decoration: none;
+}
+
+#main6 .qutular .qutu .view1:hover {
+    background-color: #754ef9;
+    text-decoration: none;
+}
+
+#main6 .qutular .qutu .view1:hover a {
+    color: white;
+}
+
+#main7{
+    margin-top: 300px;
+}
+
+#main7 .basliq4 h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main7 .basliq4 p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main7 .qutular {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+}
+
+#main7 .qutular .qutu1 {
+    width: 330px;
+    height: 350px;
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.342);
+    overflow: hidden;
+}
+
+#main7 .qutular .qutu1 .yazi {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    transition: all 0.3s;
+}
+
+#main7 .qutular .qutu1 img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+#main7 .qutular .qutu1:hover .yazi {
+    background-color: #754ef9;
+}
+
+#main7 .qutular .qutu1:hover h4 {
+    color: white;
+}
+
+#main7 .qutular .qutu1:hover p {
+    color: white;
+}
+
+#main7 .qutular .qutu1:hover img {
+    transform: scale(1.3);
+}
+
+#main7 .more {
+    margin-top: 50px;
+    position: relative;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #754ef9;
+    left: 40%;
+}
+
+#main7 .more a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    top: 30%;
+    left: 20%;
+}
+
+#main7 .more:hover {
+    background-color: white;
+    border: 1px solid #754ef9;
+}
+
+#main7 .more:hover a {
+    color: #754ef9;
+}
+#main8{
+    margin-top: 200px;
+}
+#main8 .basliq5 h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main8 .basliq5 p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+#main8 .box1{
+    height: 200px;
+    border: 1px solid #764ef94d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main8 .box1 i{
+    margin: 15px;
+    margin-top: 10px;
+    color: #754ef9;
+    font-size: 3em;
+}
+#main8 .box1 p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.507);
+}
+#main9{
+    width: 100%;
+    display: flex;
+}
+
+#main9 .form{
+    width: 550px;
+}
+#main9 .form .btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #754ef9;
+}
+
+#main9 .map{
+    margin-top: 30px;
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#main9 .form .btn:hover{
+    background-color: white;
+    border: 1px solid #754ef9;
+    color: #754ef9;
+}
+
+footer{
+background-color: #152136;
+height: 500px;
+display: flex!important;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+footer .icons {
+    display: flex;
+}
+
+
+footer .icons .iconsocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    color: #764ef9fa;
+    cursor: pointer;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #1c2940;
+}
+footer .icons .iconsocial i{
+    color: antiquewhite;
+    font-size: 2em;
+}
+
+footer .icons .iconsocial:hover {
+    background-color: #754ef9;
+    color: white;
+}
+footer .icons .iconsocial:hover i {
+    color: white;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}
+
+#copy{
+    width: 100%;
+    height: 70px;
+    background-color: #1c2940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copy h5{
+    color: white;
+    text-align: center;
+}
